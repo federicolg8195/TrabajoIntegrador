@@ -1,10 +1,15 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0px;
 }
+
+
 .home{
     background-color: #c5e2f6;
-    width: 100%;
-    height: 400px;
+    width: 393px;
+    height: 600px;
 }
 .title{
     font-size: 30px;
@@ -17,18 +22,51 @@ body{
     margin: 100px 50px 0px 50px;
 }
 
-.contact-title{
-    font-size: 15px;
+.descripcion-productos{
+    height: 500px;
+}
+
+.img-bidon{
     margin-top: 30px;
-    margin-bottom: 20px;
+}
+
+.descripcion-productos-texto{
+    font-size: 15px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+.descripcion-productos-link{
+    font-size: 15px;
+    margin: 10px 20px 10px 140px;
+}
+
+.contact{
+    background-color: #e2f0fb;
+    height: 500px;
+    
+    
+
+}
+
+.contact-title{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding-top: 50px;
+    margin-left: 20px;
 }
 
 .form-label {
-    font-size: 12px;
+    margin-left: 15px;
+    font-size: 15px;
+
 }
 
 .form-control{
-    font-size: 10px;
+    font-size: 12px;
+    margin-left: 15px;
+    margin-right: 20px;
 }
 
 .btn{
