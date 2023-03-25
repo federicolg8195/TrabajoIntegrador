@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.home{
+    background-image: url("https://img.freepik.com/foto-gratis/fondo-textura-agua-dulce-liquido-transparente_53876-142911.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.logo-agua{
+    height: 100px;
+    width: 210px;
+}
+
+@media (min-width: 769px){
+    .logo-agua{
+        margin-right: 600px;
+        
+    }}
+
+.inicio, .contacto, .comprar{
+    color: midnightblue;
+}
+
+.presentacion{
+    color: midnightblue;
+    margin: 300px 50px 0px 50px;
+    text-align: center;
+    line-height: 25px;
+}
+
+@media (min-width: 769px){
+    .presentacion{
+        margin: 150px 300px 0px 300px;
+        font-size: 20px;
+    }}
+
+.redes-sociales{
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 769px){
+    .redes-sociales{
+        margin: 300px 0px 0px 400px;
+    }}
+
+.instagram{
+    height: 30px;
+    width: 30px;
+    margin: 60px 0px 0px 70px;
+}
+
+.facebook{
+    height: 30px;
+    width: 30px;
+    margin: 60px 00px 0px 50px;
+}
+
+@media (min-width: 769px){
+    .facebook{
+        margin-left: 300px;
+    }}
+
+.instagram-url{
+    margin: 60px 0px 0px 10px;
+}
+
+.facebook-url{
+    margin: 60px 0px 0px 10px;
+}
