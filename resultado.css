@@ -1,0 +1,12 @@
+.logo-agua{
+    height: 100px;
+    width: 210px;
+}
+.inicio, .contacto, .comprar{
+    color: midnightblue;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
