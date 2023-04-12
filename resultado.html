@@ -16,10 +16,31 @@
         <a href="" class="contacto">Contacto</a>
         <a href="" class="comprar">Comprar</a>
       </header>
+    <section id="cotizacion-form" class="visible">
+      <div class="container-fluid">
+        <div class="row d-flex border border-primary" style="height: 300px;">
+            <div class="col-md-4 border border-secondary d-flex justify-content-center"><img class="img-fluid" src="bidon 5lt.jpg" alt="bidon 5lt"style="height:300px;width:500px;"></div>
+            <div class="col-md-4 border border-secondary d-flex justify-content-center"><img class="img-fluid" src="10 lt.jpg" alt="bidon 10 lt" style="height:300px;width:300px;"></div>
+            <div class="col-md-4 border border-secondary d-flex justify-content-center"><img class="img-fluid" src="bidon 20 lt.jpg" alt="bidon 20lt"style="height:300px;width:300px;"></div>
+        </div>
+        <div class="row d-flex border border-primary" style="height: 100px;">
+            <div class="col-md-4 border border-secondary d-flex  flex-column align-items-center justify-content-center"><span>Bidon de Agua 5LT</span><br><span>250$</span></div>
+            <div class="col-md-4 border border-secondary d-flex  flex-column align-items-center justify-content-center"><span>Bidon de Agua 10LT</span><br><span>350$</span></div>
+            <div class="col-md-4 border border-secondary d-flex  flex-column align-items-center justify-content-center"><span>Bidon de Agua 20LT</span><br><span>600$</span></div>
+        </div>
+        <div class="row d-flex border border-primary" style="height: 100px;">
+            <div class="col-md-4 border border-secondary d-flex  flex-column align-items-center justify-content-center"><span>Cantidad a Comprar</span><input type="number" id="primerArticulo" name="cantidad" min="1" max="100" step="1"></div>
+            <div class="col-md-4 border border-secondary d-flex  flex-column align-items-center justify-content-center"><span>Cantidad a Comprar</span><input type="number" id="segundoArticulo" name="cantidad" min="1" max="100" step="1"></div>
+            <div class="col-md-4 border border-secondary d-flex  flex-column align-items-center justify-content-center"><span>Cantidad a Comprar</span> <input type="number" id="tercerArticulo" name="cantidad" min="1" max="100" step="1"></div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary btn-lg" onclick="crearRecibo()" style="margin-left: 623px; margin-top: 5px;">Cotizar</button>
+    </section>
+
+
+      
+    <section id="resumen" class="oculto">
       <div id="factura" class="container-fluid">
-        <input type="number" id="primerArticulo" name="cantidad" min="1" max="100" step="1">
-        <input type="number" id="segundoArticulo" name="cantidad" min="1" max="100" step="1">
-        <input type="number" id="tercerArticulo" name="cantidad" min="1" max="100" step="1">
        <div class="row d-flex" style="height: 100px;">
         <div class="col-md-4 d-flex justify-content-start"><h2>Cotizacion</h2></div>
         <div class="col-md-4 offset-md-4 d-flex justify-content-end"><img src="logo-agua.png" alt="imagen" class="img-fluid" style="height: 90px;"></div>
@@ -47,10 +68,14 @@
           </tbody>
         </table>
       </div>
-      <div class="d-flex justify-content-center align-items-center">
-      <button type="button" class="btn btn-primary btn-lg" onclick="crearRecibo()">Exportar En PDF</button>  
-    </div>
+      <div class="d-flex justify-content-center align-items-center">  
       </div>
+      </div>
+    </section>
+    
+
+     
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

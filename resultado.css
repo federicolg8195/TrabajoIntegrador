@@ -10,3 +10,9 @@
     justify-content: space-evenly;
     align-items: center;
 }
+.oculto {
+    display: none; /* Oculta el elemento */
+  }
+
+  .visible {
+  }

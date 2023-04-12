@@ -25,11 +25,11 @@ const celda1 = fila.insertCell();
 const celda2 = fila.insertCell();
 const celda3 = fila.insertCell();
 const celda4 = fila.insertCell();
-celda1.innerHTML = "primer producto";
+celda1.innerHTML = "Bidon de 5LT";
 celda2.innerHTML = valorPrimerArticulo;
-celda3.innerHTML = "$15.00";
-celda4.innerHTML = "$"+valorPrimerArticulo*15+".00";
-totalPrimerArticulo=totalPrimerArticulo+(valorPrimerArticulo*15);
+celda3.innerHTML = "$250.00";
+celda4.innerHTML = "$"+valorPrimerArticulo*250+".00";
+totalPrimerArticulo=totalPrimerArticulo+(valorPrimerArticulo*250);
 }
 if(valorSegundoArticulo>0){
     const tbody = document.getElementsByTagName("tbody")[0];
@@ -38,11 +38,11 @@ if(valorSegundoArticulo>0){
     const celda2 = fila.insertCell();
     const celda3 = fila.insertCell();
     const celda4 = fila.insertCell();
-    celda1.innerHTML = "segundo producto";
+    celda1.innerHTML = "Bidon de 10LT";
     celda2.innerHTML = valorSegundoArticulo;
-    celda3.innerHTML = "$20.00";
-    celda4.innerHTML = "$"+valorSegundoArticulo*20+".00";
-    totalSegundoArticulo=totalSegundoArticulo+(valorSegundoArticulo*20);
+    celda3.innerHTML = "$350.00";
+    celda4.innerHTML = "$"+valorSegundoArticulo*350+".00";
+    totalSegundoArticulo=totalSegundoArticulo+(valorSegundoArticulo*350);
     }
     if(valorTercerArticulo>0){
         const tbody = document.getElementsByTagName("tbody")[0];
@@ -51,11 +51,11 @@ if(valorSegundoArticulo>0){
         const celda2 = fila.insertCell();
         const celda3 = fila.insertCell();
         const celda4 = fila.insertCell();
-        celda1.innerHTML = "tercer producto";
+        celda1.innerHTML = "Bidon de 20 LT";
         celda2.innerHTML = valorTercerArticulo;
-        celda3.innerHTML = "$30.00";
-        celda4.innerHTML = "$"+valorTercerArticulo*30+".00";
-        totalTercerArticulo=totalTercerArticulo+(valorTercerArticulo*30);
+        celda3.innerHTML = "$600";
+        celda4.innerHTML = "$"+valorTercerArticulo*600+".00";
+        totalTercerArticulo=totalTercerArticulo+(valorTercerArticulo*600);
         }
             //subtotal
         var tbody = document.getElementsByTagName("tbody")[0];
@@ -93,5 +93,11 @@ if(valorSegundoArticulo>0){
         celda3.innerHTML = "Total";
         total=subTotal+impuesto;
         celda4.innerHTML = "$"+total+".00";
+        let formulario = document.getElementById("cotizacion-form");
+        let resumen = document.getElementById("resumen");
+        formulario.classList.add("oculto");
+        formulario.classList.remove("visible");
+        resumen.classList.add("visible");
+        resumen.classList.remove("oculto");
 
 }
