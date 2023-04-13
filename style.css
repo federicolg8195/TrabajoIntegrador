@@ -1,81 +1,155 @@
 *{
     box-sizing: border-box;
 }
-body{
-    margin: 0px;
-}
 
+body{
+    margin: 0;
+}
 
 .home{
-    background-color: #c5e2f6;
-    width: 393px;
-    height: 600px;
+    background-image: url("https://img.freepik.com/foto-gratis/fondo-textura-agua-dulce-liquido-transparente_53876-142911.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
 }
-.title{
-    font-size: 30px;
-    margin-top: 10px;
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.etiqueta{
-    margin-top: 20px;
+
+
+.logo-agua{
+    height: 100px;
+    width: 210px;
 }
+
+@media (min-width: 769px){
+    .logo-agua{
+        margin-right: 600px;
+        
+    }}
+
+.inicio, .contacto, .comprar{
+    color: midnightblue;
+}
+
 .presentacion{
-    margin: 100px 50px 0px 50px;
+    color: midnightblue;
+    margin: 300px 50px 0px 50px;
+    text-align: center;
+    line-height: 25px;
 }
 
-.descripcion-productos{
-    height: 500px;
+@media (min-width: 769px){
+    .presentacion{
+        margin: 150px 300px 0px 300px;
+        font-size: 20px;
+    }}
+
+.redes-sociales{
+    display: flex;
+    align-items: center;
 }
 
-.img-bidon{
-    margin-top: 30px;
+@media (min-width: 769px){
+    .redes-sociales{
+        margin: 300px 0px 0px 400px;
+    }}
+
+.instagram{
+    height: 30px;
+    width: 30px;
+    margin: 60px 0px 0px 70px;
 }
 
-.descripcion-productos-texto{
-    font-size: 15px;
-    margin: 10px 20px 10px 20px;
+.facebook{
+    height: 30px;
+    width: 30px;
+    margin: 60px 00px 0px 50px;
+}
+
+@media (min-width: 769px){
+    .facebook{
+        margin-left: 300px;
+    }}
+
+.instagram-url{
+    margin: 60px 0px 0px 10px;
+}
+
+.facebook-url{
+    margin: 60px 0px 0px 10px;
+}
+
+form{
+    padding: 20px 20px;
+    box-shadow: 0 0 20px rgba(0, 0,0 , 2);
+    border-radius:  20px;
+    text-align: left;
+    width: 800px;
+    background-color: rgb(174, 234, 248);
+    color: black;
+    margin-top: 50px;
+    margin-block-end: 25px;
+    margin-left: 350px;
+}
+
+.input-group{  
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;  
+    border-radius: 3px;  
+}
+
+h2{
+    color: black;
+    font-size: 20px;
+    height: 50px;
     text-align: center;
 }
 
-.descripcion-productos-link{
+label{
+    color: black;
     font-size: 15px;
-    margin: 10px 20px 10px 140px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
-.contact{
-    background-color: #e2f0fb;
-    height: 500px;
-    
-    
-
+input,textarea{
+    padding: 17px 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #edfff0;
+    border: 2px solid #f0faf1;
+    outline: none;
 }
 
-.contact-title{
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    padding-top: 50px;
-    margin-left: 20px;
+button{
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color:lightblue;
+    border: 2px solid #f0faf1;
 }
 
-.form-label {
-    margin-left: 15px;
-    font-size: 15px;
-
+input::placeholder, textarea::placeholder{
+    color:#b5cab6;
 }
 
-.form-control-email, .form-control-mensaje{
-    font-size: 12px;
-    margin-left: 15px;
-    margin-right: 20px;
-    width: 330px;
+.nosotros{
+    background-color: lightblue;
 }
 
-.form-control-mensaje{
-    height: 150px;
+.title-cotizacion{
+    margin-top: 100px;
 }
 
-.btn{
-    font-size: 15px;
-    margin-left: 20px;
-}
-
+.oculto {
+    display: none; /* Oculta el elemento */
+  }
